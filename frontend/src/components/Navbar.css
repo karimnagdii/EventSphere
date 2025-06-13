@@ -1,0 +1,135 @@
+/*
+Navbar enhancements for EventSphere redesign
+*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  color: #222b45;
+  box-shadow: 0 2px 8px rgba(79, 140, 255, 0.05);
+  border-bottom: 1px solid #e0e7ef;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-brand {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #4f8cff !important;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-item {
+  color: #222b45 !important;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar-item:hover {
+  background-color: #f0f4ff;
+  color: #4f8cff !important;
+}
+
+.navbar-end {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logout-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #222b45;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logout-button:hover {
+  background-color: #f0f4ff;
+}
+
+.btn-cta {
+  background: linear-gradient(90deg, #4f8cff 60%, #6fc3ff 100%);
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 0.5rem 1.2rem;
+  margin-left: 1rem;
+  box-shadow: 0 2px 8px rgba(79, 140, 255, 0.1);
+  border: none;
+  transition: box-shadow 0.2s;
+}
+
+.btn-cta:hover {
+  box-shadow: 0 4px 16px rgba(79, 140, 255, 0.18);
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #4f8cff;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-menu {
+    margin: 1rem 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .navbar-nav {
+    display: none;
+  }
+
+  .navbar-nav.active {
+    display: block;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(79, 140, 255, 0.1);
+    border-radius: 0 0 12px 12px;
+    z-index: 99;
+  }
+
+  .navbar-end {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
