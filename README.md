@@ -11,7 +11,6 @@ A full-stack event management portal built with React and Node.js. This applicat
 - **Admin Dashboard**: Administrative interface with analytics and metrics
 - **Responsive Design**: Mobile-friendly interface built with Bootstrap
 - **File Uploads**: Support for event images and media
-- **Social Features**: Event sharing and social wall functionality
 
 ## Tech Stack
 
@@ -120,7 +119,6 @@ PORT=5000
 The application uses SQLite database with the following files:
 - `event_portal.db` - Main application database
 - `events.db` - Events-specific data
-- `social_wall.db` - Social features data
 
 Database schema and seed data can be found in the `backend/db/` directory.
 
