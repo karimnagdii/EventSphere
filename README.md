@@ -1,6 +1,6 @@
 # Event Portal
 
-A full-stack event management portal built with React and Node.js. This application allows users to browse, create, and manage events with features including user authentication, real-time notifications, interactive maps, analytics dashboard, and social features.
+A full-stack event management portal built with React and Node.js. This application allows users to browse, create, and manage events with features including user authentication, real-time notifications, interactive maps, analytics dashboard.
 
 ## Features
 
