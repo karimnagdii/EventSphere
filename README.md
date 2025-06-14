@@ -118,7 +118,6 @@ PORT=5000
 
 The application uses SQLite database with the following files:
 - `event_portal.db` - Main application database
-- `events.db` - Events-specific data
 
 Database schema and seed data can be found in the `backend/db/` directory.
 
